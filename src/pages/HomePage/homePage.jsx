@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar } from "./components";
+import { Navbar } from "../../components";
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <Navbar />
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export { HomePage };
