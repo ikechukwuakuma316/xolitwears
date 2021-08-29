@@ -1,10 +1,11 @@
 import React from "react";
-import { Nav } from "./Navbar.elements";
+import { Nav } from "./NavbarElements";
+import styled from "styled-components";
 
 const Navbar = () => {
   return (
     <>
-      <Nav>XOLIT WEARS</Nav>
+      <Nav>Xolit wears</Nav>
     </>
   );
 };
