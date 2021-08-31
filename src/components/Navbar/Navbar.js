@@ -1,11 +1,17 @@
 import React from "react";
-import { Nav } from "./NavbarElements";
-import styled from "styled-components";
+import { Nav, NavbarContainer, NavLogo, NavIcon } from "./Navbar.elements";
 
 const Navbar = () => {
   return (
     <>
-      <Nav>Xolit wears</Nav>
+      <Nav>
+        <NavbarContainer>
+          <NavLogo to="/">
+            <NavIcon />
+            Xolit
+          </NavLogo>
+        </NavbarContainer>
+      </Nav>
     </>
   );
 };
