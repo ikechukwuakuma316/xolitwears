@@ -1,11 +1,32 @@
 import React from "react";
+import { SidebarContainer, Side } from "./Sidebar.elements";
+import { SidebarData } from "./SidebarData";
 
-function Sidebar() {
+const Sidebar = () => {
   return (
-    <div>
-      <h1>Hello Savvy</h1>
-    </div>
+    <>
+      <SidebarContainer>
+        <Side>
+          <ul>
+            {SidebarData.map((val, key) => {
+              return (
+                <li
+                  key={key}
+                  onClick={() => {
+                    window.location.pathname = val.link;
+                  }}
+                >
+                  <div>{val.icon}</div>
+                  <div>{val.title}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </Side>
+      </SidebarContainer>
+      ;
+    </>
   );
-}
+};
 
 export default Sidebar;
