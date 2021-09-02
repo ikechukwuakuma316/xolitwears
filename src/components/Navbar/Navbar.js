@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaRegBell,
+  FaShoppingCart,
+  FaHeart,
+  FaUserAlt,
+} from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import {
   Nav,
@@ -31,19 +38,27 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick}>
               <NavItem>
-                <NavLinks to="/">Shop</NavLinks>
+                <NavLinks to="/user">
+                  <FaUserAlt />
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/plantcare">Plant Care</NavLinks>
+                <NavLinks to="/">
+                  <FaRegBell />
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/workshops">Workshops</NavLinks>
+                <NavLinks to="/Shop">
+                  <FaShoppingCart />
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/blogs">Blogs</NavLinks>
+                <NavLinks to="/love">
+                  <FaHeart />
+                </NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
