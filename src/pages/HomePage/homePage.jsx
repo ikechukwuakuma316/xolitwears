@@ -1,12 +1,12 @@
 import React from "react";
-import { Navbar } from "../../components";
-import { Sidebar } from "../../components";
+import { Navbar, Sidebar, Card } from "../../components";
 
 function HomePage() {
   return (
     <div className="App">
       <Navbar />
       <Sidebar />
+      <Card />
     </div>
   );
 }

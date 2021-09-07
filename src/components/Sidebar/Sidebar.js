@@ -1,11 +1,16 @@
 import React from "react";
-import { SidebarContainer, Side } from "./Sidebar.elements";
+import { SidebarContainer, Side, SidebarHeader } from "./Sidebar.elements";
 import { SidebarData } from "./SidebarData";
 
 const Sidebar = () => {
   return (
     <>
       <SidebarContainer>
+        <SidebarHeader>
+          <div>
+            <h1>Top Features</h1>
+          </div>
+        </SidebarHeader>
         <Side>
           <ul>
             {SidebarData.map((val, key) => {
