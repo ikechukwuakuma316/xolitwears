@@ -6,7 +6,12 @@ function HomePage() {
     <div className="App">
       <Navbar />
       <Sidebar />
-      <Card />
+      <div style={{ display: "flex" }}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

@@ -12,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Homepage />
+          {/* <div>good</div> */}
         </Route>
       </Switch>
     </Router>
