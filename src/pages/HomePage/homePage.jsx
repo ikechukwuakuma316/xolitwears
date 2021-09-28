@@ -3,7 +3,6 @@ import style from "styled-components";
 import { Navbar, Sidebar, Card } from "../../components";
 const Container = style.div`
   padding-left: 150px;
-  height: 10px;
   
 `;
 const Row = style.div`
@@ -13,8 +12,8 @@ const Row = style.div`
 `;
 const Col = style.div`
   width: calc((100% / 12) * 3);
-  border: 1px solid red;
   
+  padding: 15px 25px;
 `;
 function HomePage() {
   return (
