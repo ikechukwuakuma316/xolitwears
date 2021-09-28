@@ -31,10 +31,9 @@ const Card = {
     border: 1px solid #eee;
     box-shadow: 0 2px 2px #ccc;
     height: auto;
-    width: 210px;
+    width: 100%;
     top: 10px;
     padding: 10px;
-    margin-left: 150px;
     border-radius: 2px;
   `,
   Image: styled.img`
