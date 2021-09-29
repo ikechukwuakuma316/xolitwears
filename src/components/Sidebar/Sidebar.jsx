@@ -29,7 +29,6 @@ const Sidebar = () => {
           </ul>
         </Side>
       </SidebarContainer>
-      ;
     </>
   );
 };

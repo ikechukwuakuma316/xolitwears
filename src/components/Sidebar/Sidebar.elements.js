@@ -10,6 +10,9 @@ export const SidebarContainer = styled.section`
   bottom: 0px;
   background: white;
   border-right: 1px solid rgb(240, 245, 247);
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Side = styled.span`

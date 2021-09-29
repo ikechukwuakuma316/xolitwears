@@ -1,15 +1,14 @@
 import React from "react";
 import _Card from "./Card.style";
-import shirt from "../../assets/images/shirt.jpeg";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <>
       <_Card.Container>
-        <_Card.Image src={shirt} />
+        <_Card.Image src={props.image} />
         <_Card.Description>
-          <h3>&#8358;6,000</h3>
-          <p>Top Selling product</p>
+          <h3>&#8358;{props.price}</h3>
+          <p>{props.title}</p>
         </_Card.Description>
       </_Card.Container>
     </>

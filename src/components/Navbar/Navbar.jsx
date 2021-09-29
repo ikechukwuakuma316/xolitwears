@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.svg";
 import {
   FaBars,
   FaTimes,
@@ -31,53 +31,54 @@ const Navbar = () => {
 
   return (
     <>
-      {/* <IconContext.Provider value={{ color: "black" }}> */}
-      <Nav>
-        <NavbarContainer>
-          <NavLogo to="/">{/* <img src={logo} alt="logo" /> */}</NavLogo>
-          <MobileIcon onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
-          </MobileIcon>
+      <IconContext.Provider value={{ color: "blue" }}>
+        <Nav>
+          <NavbarContainer>
+            <MobileIcon onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </MobileIcon>{" "}
+            <NavLogo to="/">
+              <img src={logo} alt="logo" />
+            </NavLogo>
+            <NavMenu>
+              <NavbarSearch>
+                <form>
+                  <SearchIcon>
+                    <FaSearch />
+                  </SearchIcon>
 
-          <NavMenu>
-            <NavbarSearch>
-              <form>
-                <SearchIcon>
-                  <FaSearch />
-                </SearchIcon>
-
-                <InputBox
-                  type="text"
-                  placeholder="What do you want to find?"
-                  name="name"
-                />
-                <SearchButton type="submit" value="Search" />
-              </form>
-            </NavbarSearch>
-            <NavItem>
-              <NavLinks to="/user">
-                <FaUserAlt />
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/">
-                <FaRegBell />
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/Shop">
-                <FaShoppingCart />
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/love">
-                <FaHeart />
-              </NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
-      {/* </IconContext.Provider> */}
+                  <InputBox
+                    type="text"
+                    placeholder="What do you want to find?"
+                    name="name"
+                  />
+                  <SearchButton type="submit" value="Search" />
+                </form>
+              </NavbarSearch>
+              <NavItem>
+                <NavLinks to="/user">
+                  <FaUserAlt />
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/">
+                  <FaRegBell />
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/Shop">
+                  <FaShoppingCart />
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/love">
+                  <FaHeart />
+                </NavLinks>
+              </NavItem>
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
     </>
   );
 };

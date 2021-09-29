@@ -19,7 +19,6 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled(Container)`
   display: flex;
-  justify-content: space-between;
   height: 50px;
 
   ${Container}
@@ -61,13 +60,13 @@ export const SearchButton = styled.input`
   cursor: pointer;
   font-size: 16px;
   height: 100%;
-  min-width: 40px;
+  /* min-width: 40px; */
   background-color: rgb(47, 183, 236);
   color: rgb(255, 255, 255);
   font-weight: bold;
   display: inline;
   align-items: end;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 0px 4px 4px 0px;
   padding: 0px 16px;
   transition: background-color 0.2s ease 0s;
@@ -81,13 +80,9 @@ export const NavIcon = styled(FaMagento)`
 
 export const MobileIcon = styled.div`
   display: none;
-
+  padding-right: 10px;
   @media screen and (max-width: 960px) {
     display: block;
-    position: absolute;
-    top: 12px;
-    right: 25px;
-    transform: translate(-100, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
