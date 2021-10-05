@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "blue" }}>
+      <IconContext.Provider value={{ color: "black" }}>
         <Sidebar showSideBar={showSide} />
 
         <Nav>
