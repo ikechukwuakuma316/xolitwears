@@ -11,7 +11,7 @@ export const SidebarContainer = styled.section`
   background: white;
   border-right: 1px solid rgb(240, 245, 247);
   @media only screen and (max-width: 480px) {
-    display: none;
+    display: ${(props) => (props.disply ? props.disply : "none")};
   }
 `;
 

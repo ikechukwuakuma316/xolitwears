@@ -82,6 +82,7 @@ export const NavIcon = styled(FaMagento)`
 export const MobileIcon = styled.div`
   display: none;
   padding-right: 10px;
+  padding-top: 10px;
   @media screen and (max-width: 960px) {
     display: block;
     font-size: 1.8rem;

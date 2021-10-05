@@ -23,23 +23,26 @@ import {
   InputBox,
   SearchButton,
 } from "./Navbar.elements";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const [showSide, setShowSide] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleShowBtn = (active) => setShowSide(active);
 
   return (
     <>
       <IconContext.Provider value={{ color: "blue" }}>
+        <Sidebar showSideBar={showSide} />
+
         <Nav>
           <NavbarContainer>
-            <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>{" "}
             <NavLogo to="/">
               <img src={logo} alt="logo" />
             </NavLogo>
+            <MobileIcon onClick={() => handleShowBtn(showSide ? false : true)}>
+              {showSide ? <FaTimes /> : <FaBars />}
+            </MobileIcon>{" "}
             <NavMenu>
               <NavbarSearch>
                 <form>

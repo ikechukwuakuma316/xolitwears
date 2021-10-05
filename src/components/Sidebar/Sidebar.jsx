@@ -2,10 +2,11 @@ import React from "react";
 import { SidebarContainer, Side, SidebarHeader } from "./Sidebar.elements";
 import { SidebarData } from "./SidebarData";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const sidebarDisplay = props.showSideBar == true ? "block" : "none";
   return (
     <>
-      <SidebarContainer>
+      <SidebarContainer disply={sidebarDisplay}>
         <SidebarHeader>
           <div>
             <h1>Top Features</h1>
